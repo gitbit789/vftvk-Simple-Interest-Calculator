@@ -1,16 +1,42 @@
-<html>
-    <head>
-    <script src="script.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Interest Calculator</title>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
+            <label for="amount">Amount:</label> 
+            <input type="number" id="amountOne" min="0" placeholder="Enter a positive number"> <br/>
+            <label for="rate">Interest Rate:</label> 
+            <input type="range" class="range" id="rate" min="1" step="0.25" max="20" value="3.25" oninput="rangeValue.innerText = this.value"><output id="rangeValue">3.25</output><br/>
+            <label for="years">No. of Years:</label> 
+                <select id = "noYears">
+                    <option value = "1">1</option>
+                    <option value = "2">2</option>
+                    <option value = "3">3</option>
+                    <option value = "4">4</option>
+                    <option value = "5">5</option>
+                    <option value = "6">6</option>
+                    <option value = "7">7</option>
+                    <option value = "8">8</option>
+                    <option value = "9">9</option>
+                    <option value = "10">10</option>
+                </select>
+             <br><br>
+            <button onclick="compute();">Compute Interest</button><br>
+                <span id="response1"></span><br>
+                <span id="response2"></span><br>
+                <span id="response3"></span><br>
+                <span id="response4"></span><br><br>
+                <footer>© This Calculator Belongs to Me</footer>
+                <footer>© Everyone Can Get Rich</footer>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+    </div>
 
-        <button onclick="compute()">Compute</button>
-    </body>
+</body>
+
+
 </html>
