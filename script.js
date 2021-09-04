@@ -3,7 +3,7 @@ function compute() {
     var principal = document.getElementById("amountOne").value 
     var interestRate = document.getElementById("rate").value
     var years = document.getElementById("noYears").value
-    var interestEarned = principal * interestRate * years *.01 + Number(principal);
+    var interestEarned = principal * interestRate * years *.01;
     var d = new Date();
     var n = d.getFullYear();
     var futureDate = Number(n) + Number(years); 
