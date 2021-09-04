@@ -10,6 +10,6 @@ function compute() {
 
     document.getElementById("response1").innerHTML = "If you deposit $" + principal;
     document.getElementById("response2").innerHTML = "At a rate of " + interestRate + '%';
-    document.getElementById("response3").innerHTML = "You'll receive the amount of $" + interestEarned
+    document.getElementById("response3").innerHTML = "You'll receive the amount of $" principal + interestEarned
     document.getElementById("response4").innerHTML = "In the year " + futureDate
 }    
